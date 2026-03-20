@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santino Romaya | Desarrollador de Software</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -17,7 +18,7 @@
             --card-bg: #242424;
             --text-main: #e0e0e0;
             --text-muted: #a0a0a0;
-            --accent: #00f0ff; 
+            --accent: #00f0ff;
             --accent-hover: #00c0cc;
             --font-main: 'Inter', sans-serif;
         }
@@ -40,8 +41,15 @@
             overflow-x: hidden;
         }
 
-        a { text-decoration: none; color: inherit; transition: 0.3s; }
-        ul { list-style: none; }
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.3s;
+        }
+
+        ul {
+            list-style: none;
+        }
 
         /* --- UTILITIES --- */
         .container {
@@ -56,14 +64,14 @@
             text-align: center;
             font-weight: 700;
         }
-        
+
         .section-title span {
             color: var(--accent);
         }
 
         section {
             padding: 80px 0;
-            background: rgba(0, 0, 0, 0.2); 
+            background: rgba(0, 0, 0, 0.2);
             backdrop-filter: blur(1px);
         }
 
@@ -76,7 +84,7 @@
             backdrop-filter: blur(10px);
             z-index: 1000;
             padding: 15px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         nav {
@@ -139,7 +147,8 @@
 
         .hero-content p {
             font-size: 1.2rem;
-            color: var(--text-muted);
+            color: #ffffff;
+            /* TEXTO EN BLANCO */
             max-width: 600px;
             margin: 0 auto 30px auto;
         }
@@ -165,7 +174,7 @@
             background-color: var(--accent);
             color: var(--bg-color);
         }
-        
+
         .btn-primary:hover {
             background-color: var(--accent-hover);
         }
@@ -173,34 +182,28 @@
         /* --- ABOUT ME --- */
         .about-content {
             display: grid;
-            grid-template-columns: 300px 1fr; 
+            grid-template-columns: 300px 1fr;
             gap: 50px;
             align-items: center;
         }
 
         .about-img {
-            width: 300px;  
-            height: 350px; 
-            
-            
+            width: 300px;
+            height: 350px;
             border-radius: 10px;
-            
-            background-image: url("IMG.jpg"); 
-            
-            background-size: cover; 
+            background-image: url("IMG.jpg");
+            background-size: cover;
             background-position: center top;
             background-repeat: no-repeat;
-            
-            box-shadow: 0 0 20px rgba(0, 240, 255, 0.3); 
-            
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
             justify-self: center;
-
             background-color: rgba(0, 0, 0, 0.8);
         }
 
         .about-text p {
             margin-bottom: 20px;
-            color: var(--text-muted);
+            color: #ffffff;
+            /* TEXTOS EN BLANCO */
         }
 
         /* --- SKILLS --- */
@@ -215,7 +218,7 @@
             background: var(--card-bg);
             padding: 20px;
             border-radius: 8px;
-            border: 1px solid rgba(255,255,255,0.05);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             transition: transform 0.3s ease;
         }
 
@@ -242,7 +245,7 @@
             border-radius: 10px;
             overflow: hidden;
             transition: transform 0.3s;
-            border: 1px solid rgba(255,255,255,0.05);
+            border: 1px solid rgba(255, 255, 255, 0.05);
             display: flex;
             flex-direction: column;
         }
@@ -295,7 +298,7 @@
             font-size: 1.2rem;
             color: var(--text-main);
         }
-        
+
         .project-links a:hover {
             color: var(--accent);
         }
@@ -313,14 +316,14 @@
             justify-content: center;
             gap: 30px;
         }
-        
+
         .contact-item {
             display: flex;
             flex-direction: column;
             align-items: center;
             gap: 10px;
         }
-        
+
         .contact-item i {
             font-size: 1.5rem;
             color: var(--accent);
@@ -333,7 +336,8 @@
             text-align: left;
         }
 
-        input, textarea {
+        input,
+        textarea {
             background: var(--card-bg);
             border: 1px solid #333;
             padding: 15px;
@@ -342,7 +346,8 @@
             font-family: inherit;
         }
 
-        input:focus, textarea:focus {
+        input:focus,
+        textarea:focus {
             outline: none;
             border-color: var(--accent);
         }
@@ -359,10 +364,17 @@
 
         /* --- RESPONSIVE --- */
         @media (max-width: 768px) {
-            .hero-content h1 { font-size: 2.5rem; }
-            .about-content { grid-template-columns: 1fr; justify-items: center; } 
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                justify-items: center;
+            }
+
             .nav-links {
-                display: none; 
+                display: none;
                 position: absolute;
                 top: 70px;
                 left: 0;
@@ -372,8 +384,14 @@
                 padding: 20px;
                 text-align: center;
             }
-            .nav-links.active { display: flex; }
-            .menu-toggle { display: block; }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
         }
 
         /* Fondo Vanta 3D */
@@ -383,11 +401,12 @@
             left: 0;
             width: 100%;
             height: 100vh;
-            z-index: -1; 
-            pointer-events: none; 
+            z-index: -1;
+            pointer-events: none;
         }
     </style>
 </head>
+
 <body>
     <div id="vanta-bg"></div>
     <header>
@@ -412,7 +431,8 @@
         <div class="container hero-content">
             <h2>Hola, soy</h2>
             <h1>Santino Romaya</h1>
-            <p>Desarrollador de Software Jr. y especialista en Ciencia de Datos. Transformo datos complejos en soluciones digitales eficientes.</p>
+            <p>Desarrollador Fullstack especializado en soluciones digitales para el sector salud y gestión de datos.
+            </p>
             <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
             <a href="#contact" class="btn" style="margin-left: 10px">Contactar</a>
         </div>
@@ -422,16 +442,23 @@
         <div class="container">
             <h2 class="section-title">Sobre <span>Mí</span></h2>
             <div class="about-content">
-                <div class="about-img"></div> 
+                <div class="about-img"></div>
                 <div class="about-text">
-                    <p>
-                        Soy un Desarrollador de Software y un apasionado estudiante de la <strong>Tecnicatura en Ciencia de Datos e IA</strong> en el Instituto Tecnológico de Santiago del Estero.
+                    <p style="color: #ffffff;">
+                        Soy Desarrollador de Software y estudiante de <strong>Tecnologías Digitales</strong> en la
+                        Universidad Nacional de Lanús. Me especializo en el desarrollo fullstack utilizando el
+                        <strong>stack MERN</strong> y frameworks potentes como <strong>Django (Python)</strong> para
+                        crear soluciones digitales modernas, seguras y escalables.
                     </p>
-                    <p>
-                        Tengo experiencia práctica gestionando bases de datos SQL/NoSQL en entornos laborales remotos y brindando soporte técnico. Me especializo en encontrar soluciones lógicas y eficientes utilizando <strong>Python y Java</strong>.
+                    <p style="color: #ffffff;">
+                        Tengo experiencia práctica gestionando bases de datos SQL y NoSQL en entornos remotos. He
+                        liderado proyectos orientados al sector salud, como <strong>Dr. Turno</strong>, donde me enfoqué
+                        en la arquitectura de datos, la optimización de procesos y la experiencia del usuario.
                     </p>
-                    <p>
-                        Actualmente busco aplicar mis habilidades proactivas y autodidactas para contribuir al desarrollo de sistemas innovadores.
+                    <p style="color: #ffffff;">
+                        Mi enfoque combina eficiencia técnica con una mentalidad proactiva y autodidacta, buscando
+                        siempre contribuir al desarrollo de sistemas innovadores que generen un impacto real en el
+                        negocio.
                     </p>
                 </div>
             </div>
@@ -443,40 +470,28 @@
             <h2 class="section-title">Mis <span>Habilidades</span></h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <h3>Python</h3>
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <h3>Streamlit</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-java"></i>
-                    <h3>Java</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-database"></i>
-                    <h3>SQL</h3>
+                    <i class="fab fa-node-js"></i>
+                    <h3>Node.js</h3>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-leaf"></i>
                     <h3>MongoDB</h3>
                 </div>
                 <div class="skill-card">
-                    <i class="fab fa-git-alt"></i>
-                    <h3>Git / GitHub</h3>
+                    <i class="fab fa-python"></i>
+                    <h3>Django / Python</h3>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-chart-bar"></i>
-                    <h3>Power BI</h3>
+                    <i class="fas fa-database"></i>
+                    <h3>SQL / Supabase</h3>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-table"></i>
-                    <h3>Pandas</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-users-cog"></i>
-                    <h3>Scrum</h3>
+                    <i class="fas fa-brain"></i>
+                    <h3>IA</h3>
                 </div>
             </div>
         </div>
@@ -489,28 +504,50 @@
 
                 <article class="project-card">
                     <div class="project-content">
-                        <h3 class="project-title">PyH - Sistema de Punto de Venta </h3>
+                        <h3 class="project-title">Dr. Turno | Fullstack Health Solution</h3>
                         <p class="project-desc">
-                            Sistema de gestión de ventas e inventario. Permite administrar productos y transacciones, automatizando el control de stock y flujo de caja.
+                            Plataforma integral para el sector salud. Desarrollé la arquitectura del backend, el modelo
+                            de datos para historias clínicas y colaboré en el frontend para optimizar la gestión de
+                            agendas médicas.
                         </p>
                         <div class="tech-stack">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Streamlit</span>
-                            <span class="tech-tag">Automatización</span>
-                            <span class="tech-tag">Control de gastos e ingresos</span>
+                            <span class="tech-tag">MERN Stack</span>
+                            <span class="tech-tag">HealthTech</span>
+                            <span class="tech-tag">UI/UX</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/santiromaya/Punto-de-venta---PyH" target="_blank" title="Ver Código"><i class="fab fa-github"></i> </a>
-                            <a href="https://www.linkedin.com/posts/santinoromaya_python-streamlit-pos-activity-7391859106875170817-iwtZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAACMG91IBWRjyiODvCbaXqJJ4b_HMUFBW-Mc" target="_blank" title="Ver Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/santiromaya/drTurnoModel" target="_blank" title="Ver Código"><i
+                                    class="fab fa-github"></i> </a>
+                            <a href="https://drturno.site" target="_blank" title="Ver Demo"><i
+                                    class="fas fa-external-link-alt"></i> Demo</a>
                         </div>
                     </div>
                 </article>
-                
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">App para Psicopedagogos</h3>
+                        <p class="project-desc">
+                            Herramienta de gestión profesional que automatiza la creación de reportes y el seguimiento
+                            de pacientes. Uso de Supabase para persistencia y jsPDF para reportes técnicos.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">jsPDF</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" title="Proyecto Privado"><i class="fas fa-lock"></i></a>
+                        </div>
+                    </div>
+                </article>
+
                 <article class="project-card">
                     <div class="project-content">
                         <h3 class="project-title">IntegraSalud SDE</h3>
                         <p class="project-desc">
-                            Aplicación web interactiva desarrollada con Streamlit para la gestión y visualización de datos de salud. Enfocada en accesibilidad y análisis de métricas.
+                            Aplicación web interactiva desarrollada con Streamlit para la gestión y visualización de
+                            datos de salud. Enfocada en accesibilidad y análisis de métricas.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-tag">Python</span>
@@ -518,25 +555,8 @@
                             <span class="tech-tag">Gemini AI</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/santiromaya/IntegraSalud-SDE" target="_blank" title="Ver Código"><i class="fab fa-github"></i> </a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Dr. Turno (Backend Model)</h3>
-                        <p class="project-desc">
-                            Sistema de gestión de turnos para profesionales de la salud. Incluye la lógica de negocio y modelado de datos para la administración eficiente de citas.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Express</span>
-                            <span class="tech-tag">Node.js</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/santiromaya/drTurnoModel" target="_blank" title="Ver Código"><i class="fab fa-github"></i> </a>
-                            <a href="https://drturno.site" target="_blank" title="Ver Demo"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            <a href="https://github.com/santiromaya/IntegraSalud-SDE" target="_blank"
+                                title="Ver Código"><i class="fab fa-github"></i> </a>
                         </div>
                     </div>
                 </article>
@@ -548,10 +568,10 @@
     <section id="contact">
         <div class="container contact-container">
             <h2 class="section-title">Hablemos</h2>
-            <p style="color: #a0a0a0; margin-bottom: 30px;">
-                ¿Tienes una propuesta o quieres colaborar en un proyecto? Envíame un mensaje.
+            <p style="color: #ffffff; margin-bottom: 30px;"> ¿Tienes una propuesta o quieres colaborar en un proyecto?
+                Envíame un mensaje.
             </p>
-            
+
             <div class="contact-info">
                 <div class="contact-item">
                     <a href="mailto:sansinjid@gmail.com">
@@ -574,14 +594,15 @@
             </div>
 
             <form action="https://formsubmit.co/sansinjid@gmail.com" method="POST">
-                
-                <input type="hidden" name="_next" value="http://localhost:5500/#contact"> <input type="hidden" name="_subject" value="Nuevo contacto desde tu Portafolio">
+
+                <input type="hidden" name="_next" value="http://localhost:5500/#contact"> <input type="hidden"
+                    name="_subject" value="Nuevo contacto desde tu Portafolio">
                 <input type="hidden" name="_captcha" value="false">
 
                 <input type="text" name="nombre" placeholder="Tu Nombre" required>
                 <input type="email" name="email" placeholder="Tu Email" required>
                 <textarea name="mensaje" rows="5" placeholder="Tu Mensaje" required></textarea>
-                
+
                 <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
             </form>
 
@@ -589,7 +610,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Santino Romaya. Hecho con ❤️ y código.</p>
+        <p>&copy; 2026 Santino Romaya. Hecho con ❤️ y código.</p>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
@@ -598,20 +619,20 @@
     <script>
         // --- Inicialización del Fondo 3D ---
         VANTA.NET({
-          el: "#vanta-bg", 
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color: 0x00f0ff, 
-          backgroundColor: 0x000000,
-          points: 11.00, 
-          maxDistance: 22.00, 
-          spacing: 16.00, 
-          showDots: true
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x00f0ff,
+            backgroundColor: 0x000000,
+            points: 11.00,
+            maxDistance: 22.00,
+            spacing: 16.00,
+            showDots: true
         });
 
         // --- Menú Móvil ---
@@ -629,4 +650,5 @@
         });
     </script>
 </body>
+
 </html>
