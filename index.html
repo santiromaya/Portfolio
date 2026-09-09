@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Santino Romaya | Desarrollador de Software</title>
+    <title>Santino Romaya | Coordinación de Sistemas & Desarrollo</title>
     <link rel="icon" type="image/png" href="icono.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -234,6 +234,59 @@
             color: var(--accent);
         }
 
+        /* --- EXPERIENCE --- */
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .experience-item {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-left: 3px solid var(--accent);
+            border-radius: 8px;
+            padding: 24px 28px;
+        }
+
+        .experience-header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 8px 20px;
+            margin-bottom: 8px;
+        }
+
+        .experience-item h3 {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+
+        .experience-role {
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+
+        .experience-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .experience-item ul {
+            list-style: disc;
+            padding-left: 18px;
+            color: #ffffff;
+        }
+
+        .experience-item li {
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+        }
+
         /* --- PROJECTS --- */
         .projects-grid {
             display: grid;
@@ -420,6 +473,7 @@
                 <ul class="nav-links">
                     <li><a href="#hero">Inicio</a></li>
                     <li><a href="#about">Sobre Mí</a></li>
+                    <li><a href="#experience">Experiencia</a></li>
                     <li><a href="#skills">Habilidades</a></li>
                     <li><a href="#projects">Proyectos</a></li>
                     <li><a href="#contact">Contacto</a></li>
@@ -430,11 +484,11 @@
 
     <section id="hero">
         <div class="container hero-content">
-            <h2>Hola, soy</h2>
+            <h2>Técnico en Desarrollo de Software</h2>
             <h1>Santino Romaya</h1>
-            <p>Desarrollador de Software Jr. con experiencia en bases de datos relacionales, consumo de APIs y metodologías ágiles. Preparado para desafíos tecnológicos de misión crítica con GeneXus.
+            <p>Cofundador de Estero Software. Coordino proyectos de desarrollo, diseño arquitecturas escalables e integro soluciones tecnológicas. Disponible de forma presencial en Santiago del Estero (media jornada, mañana).
             </p>
-            <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+            <a href="#experience" class="btn btn-primary">Ver Experiencia</a>
             <a href="#contact" class="btn" style="margin-left: 10px">Contactar</a>
         </div>
     </section>
@@ -446,15 +500,68 @@
                 <div class="about-img"></div>
                 <div class="about-text">
                     <p style="color: #ffffff;">
-                        Soy <strong>Desarrollador de Software Jr.</strong> (Tecnicatura Finalizada). Cofundador y Desarrollador Fullstack en Estero Software, donde desarrollo soluciones web con arquitecturas escalables.
+                        Soy <strong>Técnico Superior en Desarrollo de Software</strong> (titulado) y estudiante de Licenciatura en Sistemas de Información (UNSE). Como <strong>cofundador y desarrollador fullstack en Estero Software</strong>, lidero la definición técnica de productos, la integración de sistemas y el seguimiento de equipos de desarrollo.
                     </p>
                     <p style="color: #ffffff;">
-                        Poseo experiencia en la optimización de bases de datos relacionales (T-SQL, SQL Server, PostgreSQL) y consumo de APIs. Trabajé como Desarrollador de Base de Datos en Forbit y Analista en Farmacia La Esquina, adquiriendo una fuerte mentalidad analítica.
+                        Tengo visión sistémica y arquitectónica: diseño modelos de datos, APIs e integraciones (pagos, facturación, hardware) sobre bases relacionales (SQL Server, MySQL, PostgreSQL). Experiencia previa como Desarrollador de Bases de Datos en Forbit y Analista en Farmacia La Esquina.
                     </p>
                     <p style="color: #ffffff;">
-                        Cuento con conocimientos en la herramienta <strong>GeneXus</strong> (ambientes Win y Web). Me integro fácilmente a equipos con metodologías ágiles y control de versiones (Git), aportando eficiencia, proactividad y altos estándares de calidad al ciclo de desarrollo.
+                        Trabajo con metodologías ágiles, Git y stack backend en <strong>C#, JavaScript y Python</strong>. Me interesa aportar en roles de coordinación de sistemas, supervisando proyectos y asegurando la coherencia tecnológica de las soluciones.
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experiencia <span>Profesional</span></h2>
+            <div class="experience-list">
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <h3>Estero Software</h3>
+                        <span class="experience-date">2024 — Presente · Santiago del Estero</span>
+                    </div>
+                    <p class="experience-role">Cofundador · Coordinación técnica & Desarrollo Fullstack</p>
+                    <ul>
+                        <li>Supervisión y seguimiento de proyectos de desarrollo de software a medida.</li>
+                        <li>Definición de arquitectura, modelo de datos e integración tecnológica de soluciones (APIs, pagos, facturación).</li>
+                        <li>Coordinación del trabajo del equipo de desarrollo y entrega de productos multi-tenant en producción.</li>
+                    </ul>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <h3>Forbit</h3>
+                        <span class="experience-date">08/2024 — 12/2024 · Mendoza (remoto)</span>
+                    </div>
+                    <p class="experience-role">Desarrollador de Bases de Datos</p>
+                    <ul>
+                        <li>Manejo y optimización de bases de datos SQL y NoSQL.</li>
+                        <li>Organización y estructuración de información digital, asegurando integridad de los datos.</li>
+                    </ul>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <h3>Farmacia La Esquina</h3>
+                        <span class="experience-date">06/2025 — 08/2025 · Santiago del Estero</span>
+                    </div>
+                    <p class="experience-role">Analista de Compras</p>
+                    <ul>
+                        <li>Gestión de inventario y carga sistemática de información en bases de datos.</li>
+                        <li>Análisis de ventas para apoyo a la toma de decisiones.</li>
+                    </ul>
+                </article>
+                <article class="experience-item">
+                    <div class="experience-header">
+                        <h3>HL Informática</h3>
+                        <span class="experience-date">11/2021 — 03/2022 · Santiago del Estero</span>
+                    </div>
+                    <p class="experience-role">Atención al cliente y servicio técnico</p>
+                    <ul>
+                        <li>Diagnóstico, reparación y mantenimiento preventivo de equipos.</li>
+                        <li>Instalación de software y asesoramiento técnico a clientes.</li>
+                    </ul>
+                </article>
             </div>
         </div>
     </section>
@@ -464,28 +571,28 @@
             <h2 class="section-title">Mis <span>Habilidades</span></h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>GeneXus</h3>
+                    <i class="fas fa-sitemap"></i>
+                    <h3>Arquitectura & Visión Sistémica</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Coordinación de Equipos</h3>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-database"></i>
-                    <h3>T-SQL & Relacionales</h3>
+                    <h3>SQL / MySQL / SQL Server</h3>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-network-wired"></i>
-                    <h3>Web APIs</h3>
+                    <i class="fas fa-code"></i>
+                    <h3>C# · JS · Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-plug"></i>
+                    <h3>Integración de APIs & Sistemas</h3>
                 </div>
                 <div class="skill-card">
                     <i class="fab fa-git-alt"></i>
-                    <h3>Git & Metodologías Ágiles</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-react"></i>
-                    <h3>FrontEnd Moderno</h3>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <h3>BackEnd (C#, JS, Python)</h3>
+                    <h3>Git · Scrum · Jira</h3>
                 </div>
             </div>
         </div>
@@ -500,14 +607,14 @@
                     <div class="project-content">
                         <h3 class="project-title">TiendaPro | Sistema de Gestión (Multi-tenant)</h3>
                         <p class="project-desc">
-                            Sistema completo para gestión y administración de tiendas. Integración con bases de datos relacionales para un manejo eficiente de inventarios y ventas.
+                            Sistema integral de gestión comercial. Diseñé la arquitectura multi-tenant, el modelo relacional y la integración tecnológica con Mercado Pago, ARCA y hardware de punto de venta.
                         </p>
                         <div class="tech-stack">
+                            <span class="tech-tag">Arquitectura Multi-tenant</span>
                             <span class="tech-tag">Django + React</span>
                             <span class="tech-tag">PostgreSQL</span>
-                            <span class="tech-tag">Mercado Pago API</span>
-                            <span class="tech-tag">ARCA API</span>
-                            <span class="tech-tag">Hardware Integration</span>
+                            <span class="tech-tag">Integración APIs</span>
+                            <span class="tech-tag">Hardware</span>
                         </div>
                         <div class="project-links">
                             <a href="#" title="Proyecto Privado"><i class="fas fa-lock"></i></a>
@@ -517,9 +624,83 @@
 
                 <article class="project-card">
                     <div class="project-content">
+                        <h3 class="project-title">Dr. Turno | Gestión de Turnos Médicos</h3>
+                        <p class="project-desc">
+                            Tesis de Tecnicatura y producto en producción. Definí la arquitectura del backend, el modelo de datos de historias clínicas y coordiné la integración frontend–API para agendas médicas.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Arquitectura Backend</span>
+                            <span class="tech-tag">React + TypeScript</span>
+                            <span class="tech-tag">Node.js + Express</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Integración IA</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drturno.site" target="_blank" title="Ver Demo"><i
+                                    class="fas fa-external-link-alt"></i> Visitar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Turnosoft | Gestión de turnos (Multi-tenant)</h3>
+                        <p class="project-desc">
+                            Plataforma multi-tenant para agendas. Supervisé el diseño del core: reserva pública, panel de administración y control de concurrencia sobre PostgreSQL.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Visión Arquitectónica</span>
+                            <span class="tech-tag">Django + HTMX</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Multi-tenant</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" title="Proyecto Privado"><i class="fas fa-lock"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">PsicoManager | Gestión Psicopedagógica</h3>
+                        <p class="project-desc">
+                            Sistema de gestión profesional: automatización de reportes, seguimiento de pacientes e integración de persistencia y generación documental (PDF/Excel).
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React + Vite</span>
+                            <span class="tech-tag">Supabase (SQL)</span>
+                            <span class="tech-tag">Integración Documental</span>
+                            <span class="tech-tag">jsPDF + Excel</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" title="Proyecto Privado"><i class="fas fa-lock"></i></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">Infoprecios | Comparador de precios</h3>
+                        <p class="project-desc">
+                            Herramienta de relevamiento y estructuración de precios. Enfoque en consumo de datos externos y organización eficiente de la información.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech-tag">React + TypeScript</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Integración de Datos</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://infoprecios.com.ar/" target="_blank" title="Ver Sitio"><i
+                                    class="fas fa-external-link-alt"></i> Visitar</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-content">
                         <h3 class="project-title">TiendaPro | Landing Page</h3>
                         <p class="project-desc">
-                            Sitio de presentación y marketing para el producto TiendaPro, diseñado para captar leads y explicar funcionalidades clave.
+                            Sitio de presentación del producto TiendaPro, orientado a captar leads y comunicar la propuesta de valor del sistema de gestión.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-tag">React</span>
@@ -535,21 +716,17 @@
 
                 <article class="project-card">
                     <div class="project-content">
-                        <h3 class="project-title">Dr. Turno | Gestión de Turnos Médicos</h3>
+                        <h3 class="project-title">Estero Software | Landing Page</h3>
                         <p class="project-desc">
-                            Plataforma integral para el sector salud. Desarrollé la arquitectura del backend, el modelo
-                            de datos para historias clínicas y colaboré en el frontend para optimizar la gestión de
-                            agendas médicas.
+                            Landing oficial de la agencia: presentación de servicios de desarrollo, arquitectura e integración de software.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-tag">React + TypeScript</span>
-                            <span class="tech-tag">Node.js + Express</span>
-                            <span class="tech-tag">MongoDB</span>
-                            <span class="tech-tag">Groq IA</span>
-                            <span class="tech-tag">Medical Prescriptions API</span>
+                            <span class="tech-tag">TailwindCSS + shadcn/ui</span>
+                            <span class="tech-tag">Framer Motion</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://drturno.site" target="_blank" title="Ver Demo"><i
+                            <a href="https://esterosoft.vercel.app/" target="_blank" title="Ver Sitio"><i
                                     class="fas fa-external-link-alt"></i> Visitar</a>
                         </div>
                     </div>
@@ -559,7 +736,7 @@
                     <div class="project-content">
                         <h3 class="project-title">Pizzería Don Salto | Menú Digital</h3>
                         <p class="project-desc">
-                            Plataforma web enfocada en ventas y catálogo de productos para el rubro gastronómico, con un diseño moderno y responsivo.
+                            Plataforma web de catálogo y ventas para gastronomía, con backend propio y diseño responsivo.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-tag">HTML/JS + TailwindCSS</span>
@@ -577,7 +754,7 @@
                     <div class="project-content">
                         <h3 class="project-title">Pizzería Donatta | Menú Digital</h3>
                         <p class="project-desc">
-                            Menú digital interactivo para pizzería, con catálogo de productos, diseño responsivo y experiencia optimizada para pedidos desde el celular.
+                            Menú digital interactivo con catálogo de productos y experiencia optimizada para pedidos desde el celular.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-tag">React + TypeScript</span>
@@ -595,7 +772,7 @@
                     <div class="project-content">
                         <h3 class="project-title">Latte del Estero | Landing Page</h3>
                         <p class="project-desc">
-                            Landing page promocional con una estética cuidada y moderna, enfocada en resaltar la identidad visual del negocio.
+                            Landing promocional con identidad visual cuidada, orientada a destacar la marca del negocio.
                         </p>
                         <div class="tech-stack">
                             <span class="tech-tag">React + TypeScript</span>
@@ -609,78 +786,6 @@
                     </div>
                 </article>
 
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Infoprecios | Comparador de precios</h3>
-                        <p class="project-desc">
-                            Herramienta de relevamiento y gestión de información de precios. Consumo de datos y estructuración en bases de datos eficientes.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React + TypeScript</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Web Scraping</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://infoprecios.com.ar/" target="_blank" title="Ver Sitio"><i
-                                    class="fas fa-external-link-alt"></i> Visitar</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Estero Software | Landing Page</h3>
-                        <p class="project-desc">
-                            Landing page oficial para la agencia de desarrollo de software. Diseño enfocado en la conversión y presentación de servicios tecnológicos.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React + TypeScript</span>
-                            <span class="tech-tag">TailwindCSS + shadcn/ui</span>
-                            <span class="tech-tag">Framer Motion</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://esterosoft.vercel.app/" target="_blank" title="Ver Sitio"><i
-                                    class="fas fa-external-link-alt"></i> Visitar</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">PsicoManager | Gestión Psicopedagógica</h3>
-                        <p class="project-desc">
-                            Herramienta de gestión profesional que automatiza la creación de reportes y el seguimiento
-                            de pacientes. Uso de Supabase para persistencia y jsPDF para reportes técnicos.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">React + Vite</span>
-                            <span class="tech-tag">Supabase</span>
-                            <span class="tech-tag">TailwindCSS</span>
-                            <span class="tech-tag">jsPDF + Excel</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" title="Proyecto Privado"><i class="fas fa-lock"></i></a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card">
-                    <div class="project-content">
-                        <h3 class="project-title">Turnosoft | Gestión de turnos (Multi-tenant)</h3>
-                        <p class="project-desc">
-                            Core de plataforma multi-tenant para gestión de turnos y agendas. Implementación de reserva pública, panel de administración y control de concurrencia.
-                        </p>
-                        <div class="tech-stack">
-                            <span class="tech-tag">Django + HTMX</span>
-                            <span class="tech-tag">TailwindCSS</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" title="Proyecto Privado"><i class="fas fa-lock"></i></a>
-                        </div>
-                    </div>
-                </article>
-
             </div>
         </div>
     </section>
@@ -688,8 +793,9 @@
     <section id="contact">
         <div class="container contact-container">
             <h2 class="section-title">Hablemos</h2>
-            <p style="color: #ffffff; margin-bottom: 30px;"> ¿Tienes una propuesta o quieres colaborar en un proyecto?
-                Envíame un mensaje.
+            <p style="color: #ffffff; margin-bottom: 30px;">
+                Disponible de forma <strong>presencial en Santiago del Estero</strong>, media jornada por la mañana.
+                Si buscás alguien para coordinar sistemas, integrar soluciones o liderar el desarrollo de un equipo, escribime.
             </p>
 
             <div class="contact-info">
